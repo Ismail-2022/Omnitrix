@@ -15,6 +15,12 @@ struct Alien: Identifiable, Equatable {
     let colorHex: UInt32
 
     var color: Color { Color(hex: colorHex) }
+
+    /// Asset-catalog image name for this alien's artwork, e.g. "Grey Matter" -> "greymatter".
+    /// If no image with this name exists, the UI falls back to `symbol`.
+    var artName: String {
+        String(name.lowercased().unicodeScalars.filter(CharacterSet.alphanumerics.contains))
+    }
 }
 
 extension Color {

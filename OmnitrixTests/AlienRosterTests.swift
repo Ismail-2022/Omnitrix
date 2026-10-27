@@ -26,6 +26,15 @@ final class AlienRosterTests: XCTestCase {
         }
     }
 
+    func testArtNamesAreLowercaseSlugs() {
+        XCTAssertEqual(AlienRoster.all[0].artName, "heatblast")
+        XCTAssertEqual(AlienRoster.all[4].artName, "greymatter")
+        XCTAssertEqual(AlienRoster.all[13].artName, "snareoh")
+        XCTAssertEqual(AlienRoster.all[18].artName, "waybig")
+        let slugs = AlienRoster.all.map(\.artName)
+        XCTAssertEqual(Set(slugs).count, slugs.count)
+    }
+
     func testCrownValueMapsToIndex() {
         XCTAssertEqual(AlienRoster.index(forCrownValue: 0), 0)
         XCTAssertEqual(AlienRoster.index(forCrownValue: 4.4), 4)

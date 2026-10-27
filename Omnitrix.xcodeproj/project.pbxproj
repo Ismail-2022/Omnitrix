@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		012FE5BCC4FBCAC2CD6BCE26 /* AlienArtView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0315AFAE69FB20EB53AB063 /* AlienArtView.swift */; };
 		0E32986CD0D771E5C59D18EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A60F44CECF9AE3BA9E59607B /* Assets.xcassets */; };
 		1179081047A598768EA7DBB3 /* AlienRoster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95026D13DAB4214D8AB81546 /* AlienRoster.swift */; };
 		2546ACA9E26E1EDB9B72E483 /* TransformFlashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BCB29C00DAE5BAC50136C9 /* TransformFlashView.swift */; };
@@ -40,6 +41,7 @@
 		B6743759ACDFB5EEF1A0B124 /* OmnitrixApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OmnitrixApp.swift; sourceTree = "<group>"; };
 		C85C66C0D1273A060A1AC034 /* Alien.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alien.swift; sourceTree = "<group>"; };
 		D6E0BC5D864AB3B9C8D4AD42 /* Base.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Base.xcconfig; sourceTree = "<group>"; };
+		E0315AFAE69FB20EB53AB063 /* AlienArtView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlienArtView.swift; sourceTree = "<group>"; };
 		F2BCB29C00DAE5BAC50136C9 /* TransformFlashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransformFlashView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -92,6 +94,7 @@
 		C19250E23F25BD87688E02F0 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E0315AFAE69FB20EB53AB063 /* AlienArtView.swift */,
 				12E499C5859C7BA28B0FFEC0 /* AlienDetailView.swift */,
 				8C5E4C8203ECFF302AFCF431 /* ContentView.swift */,
 				58CAABE70A2CC089467117DF /* DialView.swift */,
@@ -205,6 +208,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				87D6AF6DA3F26365E6964DF4 /* Alien.swift in Sources */,
+				012FE5BCC4FBCAC2CD6BCE26 /* AlienArtView.swift in Sources */,
 				B74667358DE091D4DA0EC53E /* AlienDetailView.swift in Sources */,
 				1179081047A598768EA7DBB3 /* AlienRoster.swift in Sources */,
 				464ED450D4B65F9E90059E64 /* ContentView.swift in Sources */,

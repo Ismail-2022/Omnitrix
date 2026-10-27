@@ -8,15 +8,16 @@ struct AlienDetailView: View {
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 8) {
-                HStack(spacing: 8) {
-                    Image(systemName: alien.symbol)
-                        .font(.title2)
-                        .foregroundStyle(alien.color)
-                    Text(alien.name)
-                        .font(.title3.bold())
-                        .lineLimit(2)
-                        .minimumScaleFactor(0.7)
-                }
+                AlienArtView(alien: alien, fallbackTint: alien.color)
+                    .frame(height: 110)
+                    .frame(maxWidth: .infinity)
+                    .shadow(color: alien.color.opacity(0.6), radius: 10)
+
+                Text(alien.name)
+                    .font(.title3.bold())
+                    .lineLimit(2)
+                    .minimumScaleFactor(0.7)
+                    .frame(maxWidth: .infinity)
 
                 InfoRow(label: "Species", value: alien.species)
                 if let homeworld = alien.homeworld {
