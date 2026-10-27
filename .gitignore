@@ -1,0 +1,19 @@
+# Local signing config (your Team ID lives here)
+Config/Local.xcconfig
+
+# Xcode
+build/
+DerivedData/
+*.xcuserstate
+xcuserdata/
+*.xcscmblueprint
+*.moved-aside
+
+# Signing artefacts: never commit these
+*.mobileprovision
+*.provisionprofile
+*.p12
+*.cer
+
+# macOS
+.DS_Store

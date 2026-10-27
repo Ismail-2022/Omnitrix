@@ -1,0 +1,9 @@
+// Shared build settings. Do NOT put your Team ID here.
+//
+// To build on your own Apple Watch, copy Local.xcconfig.example to
+// Local.xcconfig (gitignored) and set DEVELOPMENT_TEAM / BUNDLE_ID_PREFIX.
+
+DEVELOPMENT_TEAM =
+BUNDLE_ID_PREFIX = com.example
+
+#include? "Local.xcconfig"
